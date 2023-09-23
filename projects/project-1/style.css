@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
     font-family: "Urbanist", sans-serif;
     text-decoration: none;
 }
@@ -54,6 +53,6 @@ a.button-plan-your-trip {
     border-radius: 60px;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 50;
+    font-size: 50px;
     background-color: #FFC122;
 }
