@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;800;900&display=swap');
 
+body {
+    background-color: rgb(255, 255, 255);
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +12,8 @@
 /* Navigation Bar */
 .header { 
     padding: 0;
-    background-color: rgb(213, 213, 255);
+    max-height: 130px;
+    background-color: rgb(255, 255, 255);
     padding: 20px 20px;
     display: flex;
     justify-content:space-between;
@@ -30,29 +34,69 @@ a.menu-button{
     cursor: pointer;
 }
 /* Call to Action */
+.header {
+    display: flex;
+
+}
 .top-image {
-    background-position: center;
-    position: absolute;
+    margin: auto;
+    position: relative;
+    max-width:100%;
+
 }
 h1{ 
-    position: relative;
+    position: absolute;
     color: white;
     font-weight: 900;
     text-transform: uppercase;
     left: 70px;
-    top: 70px;
+    top: 170px;
     padding-right: 800px;
     font-size: 100px;
 }
 a.button-plan-your-trip { 
-    position: relative;
+    position: absolute;
     left: 70px;
-    top: 150px;
+    top: 580px;
     color: #1E204F;
-    padding: 10px 30px;
+    padding: 10px 60px;
     border-radius: 60px;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 30px;
     background-color: #FFC122;
 }
+
+h2 {
+    padding-top: 40px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #12A16E;
+}
+p{ 
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+    color: #1E204F;
+    text-align: left;
+    font-size: 30px;
+}
+.places-parent {
+    /*position: relative;*/
+    display: flex;
+    justify-content: space-around; 
+    align-items:first baseline;
+    background-color: rgb(176, 141, 89);
+}
+.location {
+    background-color: #32347d;
+    text-align: center;
+    width: 360px;
+    height: 500;
+    padding: 40px;
+    margin: 70px;
+}
+
