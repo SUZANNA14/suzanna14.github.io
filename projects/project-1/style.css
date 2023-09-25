@@ -10,7 +10,7 @@ body {
     text-decoration: none;
 }
 /* Navigation Bar */
-.header { 
+.menu { 
     padding: 0;
     max-height: 130px;
     background-color: rgb(255, 255, 255);
@@ -98,5 +98,8 @@ p{
     height: 500;
     padding: 40px;
     margin: 70px;
+}
+.location-1{
+    border: 20px #32347d;
 }
 
