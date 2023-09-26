@@ -21,7 +21,6 @@ body {
 }
 
 .logo {
-    padding-left: 4%;
     margin-right: auto;
     cursor: pointer;
     max-width: 300px;
@@ -97,12 +96,13 @@ p{
     text-align: start;
     display: flex;
     flex-direction: column;
+    position: static;
     justify-content: space-around;
     align-items: left;
     margin: 1%;
     max-width: 500px;
     min-width: 500px;
-    height: 500;
+    max-height: 100%;
 }
 .photo-location {
     max-width: 500px;
@@ -115,15 +115,13 @@ p{
 
 }
 a.website-button {
+    position: relative;
     font-weight: 700;
     font-size: 30px;
     line-height: 3em;
     color: #2779F5;
     text-align: left;
     padding-left: 4%;
-    bottom: 0;
-    align-self: ;
-
 }
 
 a.view-more {
