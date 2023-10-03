@@ -84,7 +84,7 @@ ul {
     width: 100%;
     max-height: auto;
     background-position: center;
-
+    margin: o auto;
 }
 #next-page {
     color: rgb(0, 0, 0);
