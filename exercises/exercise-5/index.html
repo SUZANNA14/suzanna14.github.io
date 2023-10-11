@@ -17,13 +17,14 @@
       }
       /* * = Applies to everything. Don't count border as part of width */
       * {
+        list-style-type: none;
+        text-decoration: none;
         box-sizing: border-box;
+      
       }
+       
       /* Draw border so we can see elements */
-      figure,
-      div {
-        border: 1px solid gray;
-      }
+    
       body {
         background-color: var(--bg-color);
         margin: 0;
@@ -43,17 +44,24 @@
           }
         }
         nav {
-          text-align: right;
+          text-align: center;
           width: calc(100% - var(--header-width));
 
           ul {
+            float: right;
+    
             margin: 0;
           }
           li {
+            text-align: center;
             display: inline;
           }
           a {
             padding: var(--padding-medium);
+          }
+          .active {
+            color: black;
+
           }
         }
       }
@@ -82,21 +90,30 @@
       /* Utilities */
       .row {
         display: flex;
+        -ms-flex-item-align: stretch;
         margin: 0 auto;
         max-width: 1100px;
         gap: var(--gap);
         justify-content: space;
+        padding: 1em 0;
       }
       @media (max-width: 700px) {
-        body {
-            background-color: forestgreen;
+        header {
+          align-items: center;
+          text-align: center;
+        }
+        #hero-image {
+        width: 100%;
+        align-self: center;
+       }
+       #intro {
+        width: 95%;
         }
         .row {
             flex-direction: column;
         }
-        #hero-image,
-        #intro {
-
+        .card{
+          padding-top: 2em;
         }
 
 
