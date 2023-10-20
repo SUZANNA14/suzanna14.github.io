@@ -1,0 +1,2 @@
+border-radius: 50px;
+background: var(--Button-Light-Blue, #AFD9FF);

@@ -1,20 +1,118 @@
+  @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
+    font-family: "Sen", sans-serif;
+    text-decoration: none;
 }
+
 header{
+    /*
+    z-index: 200;
+    max-height: 10%;
+    position: -webkit-sticky;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     place-items: center;
 }
+
 .logo-background {
     grid-area: 1/1;
-       height: auto;
+    width: 450px;
+    height: auto;
 }
 
-.logo {
-    max-width: 377px;
+img.logo {
+    max-width: 350px;
     grid-area: 1/1;
-    top: 0;
+    top: 0;*/
+}
 
+#body-wrapper{
+    max-width: 1100px;
+    margin: -35px auto;
+    z-index: 100;
+}
+.photo {
+    position: static;
+    margin: auto;
+    background-image: url(../project-2/media/hero-photo.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    place-items: center;
+    width: 1100px;
+    height: 500px;
+    position: relative;
+    
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(9, 0, 2, 0.30);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+   color: white;
+    width: 800px;
+    text-align: center;
+    height: auto;
+    font-size: 80px;
+    font-family: 'Sen', sans-serif;
+}
+.steps-text{
+    display: block;
+    margin: 15px 0px;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 107.5%;
+}
+.main-text{
+    display: block;
+    margin: 30px 0px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 131.5%;
+}
+ul {
+    padding-left: 20px;
+}
+#instructions{
+    width: 1100px;
+    height: 210px;
+    margin:  auto;
+}
+
+.button{
+    background-color: #AFD9FF; 
+    border-radius: 50px;
+    align-items: center;
+    margin: 10px auto;
+    height: 55px;
+    padding: 5px;
+    width: 300px;
+    display: flex;
+    justify-content:space-evenly;
+
+}
+.button-text{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.footer {
+width: 100%;
+min-height: ;
 }
