@@ -21,8 +21,6 @@ a{
     --button-active-color: #F9D75F;
     --button-active-border-color: #C3325D;
     --text-color: #000;
-
-
 }
 
 header{
@@ -86,6 +84,7 @@ h1{
 }
 .steps-text{
     display: block;
+    color: var(--button-active-border-color);
     margin: 15px 0px;
     font-size: 30px;
     font-weight: 800;
@@ -112,8 +111,8 @@ ul {
     background-color: var(--button-standart-color); 
     border-radius: 50px;
     align-items: center;
-    margin: 10px auto;
-    height: 55px;
+    margin: 20px auto;
+    height: 50px;
     padding: 5px 40px;
     width: 220px;
     display: flex;
@@ -142,8 +141,8 @@ footer img {
     flex-direction: row;
     width: 100%;
     justify-content:space-between;
-    height: 55px;
-    padding-bottom: 35px;
+    height: 40px;
+    margin-bottom: 60px;
     align-items: center;
 
 }
@@ -167,7 +166,13 @@ footer img {
     border-style: solid;
 }
 
-#step-1 .buttons a:nth-child(1){
+#step-1 .buttons a:nth-child(1),
+#step-2 .buttons a:nth-child(2),
+#step-3 .buttons a:nth-child(3),
+#step-4 .buttons a:nth-child(4),
+#step-5 .buttons a:nth-child(5),
+#step-6 .buttons a:nth-child(6),
+#step-7 .buttons a:nth-child(7) {
    background-color: var(--button-active-color);
    border-width: var(--button-standart-border-width);
    border-color: var(--button-active-border-color);
@@ -190,4 +195,8 @@ footer img {
 }
 .step1{
     background-image: url(../project-2/media/hero-photo.jpg);
+}
+.step2{
+    background-image: ;
+
 }
