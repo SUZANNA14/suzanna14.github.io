@@ -11,7 +11,7 @@ html {
     cursor: url("../project-2/media/cursor-yellow.svg"), auto;
 }
 a{
-    cursor: url("../project-2/media/cursor-button.svg"), pointer;
+    cursor: url("../project-2/media/cursor-button.svg"), auto;
 }
 :root{
     --button-standart-color: #AFD9FF;
