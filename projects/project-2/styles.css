@@ -8,19 +8,10 @@
 }
 html {
     height: 100%;
-    cursor: url('/project-2/media/cursor-yellow.svg'), auto;
+    cursor: url('/project-2/media/cursor-yellow.svg'), pointer;
 }
 a{
-    cursor: url('/project-2/media/cursor-button.svg'), auto;
-}
-a:focus{
-    cursor: url('/project-2/media/cursor-button.svg'), auto;
-}
-a:active {
-    cursor: url('/project-2/media/cursor-button.svg'), auto;
-}
-a:hover {
-    cursor: url('/project-2/media/cursor-button.svg'), auto;
+    cursor: url('/project-2/media/cursor-button.svg'), pointer;
 }
 :root{
     --button-standart-color: #AFD9FF;
