@@ -198,9 +198,28 @@ footer img {
 
 }
 .step1{
-    background-image: url(../project-2/media/hero-photo.jpg);
+    background-image: url(../project-2/media/step-1.jpg);
 }
 .step2{
-    background-image: ;
+    background-image: url(../project-2/media/step-2.jpg);
+
+}
+.step3{
+    background-image: url(../project-2/media/step-3.jpg);
+
+}
+.step4{
+    background-image: url(../project-2/media/step-4.jpg);
+
+}
+.step5{
+    background-image: url(../project-2/media/step-5.jpg);
+
+}
+.step6{
+    background-image: url(../project-2/media/step-6.jpg);
+}
+.step7{
+    background-image: url(../project-2/media/step-7.jpg);
 
 }
