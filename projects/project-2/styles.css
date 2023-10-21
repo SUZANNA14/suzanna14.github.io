@@ -10,7 +10,7 @@ html {
     height: 100%;
     cursor: url("../project-2/media/cursor-yellow.svg"), auto;
 }
-a{
+a {
     cursor: url("../project-2/media/cursor-button.svg"), auto;
 }
 :root{
