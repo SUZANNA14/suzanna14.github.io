@@ -39,6 +39,7 @@ header{
     align-self: center;
     justify-self: center;
     margin-top: -18px;
+    text-shadow: rgba(9, 0, 2, 0.30);
 }
 .logo {
     margin-top: -15px;
