@@ -4,13 +4,33 @@
     margin: 0;
     font-family: "Sen", sans-serif;
     text-decoration: none;
+  
 }
+html {
+    height: 100%;
+    cursor: url('/project-2/media/cursor-yellow.svg'), auto;
+}
+a{
+    cursor: url('/project-2/media/cursor-button.svg'), auto;
+}
+
+:root{
+    --button-standart-color: #AFD9FF;
+    --button-standart-border-color: #D5F1E5;
+    --button-standart-border-width: 5px;
+    --button-active-color: #F9D75F;
+    --button-active-border-color: #C3325D;
+    --text-color: #000;
+
+
+}
+
 header{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "overlap";
-    position: -webkit-sticky;
+    position: sticky;
     z-index: 200;
 }
 .logo-background {
@@ -21,14 +41,14 @@ header{
 }
 .logo {
     margin-top: -15px;
-grid-area: overlap;
-align-self: center;
-justify-self: center;
+    grid-area: overlap;
+    align-self: center;
+    justify-self: center;
 }
 #body-wrapper{
     max-width: 1100px;
     margin: -35px auto;
-    z-index: 100;
+    min-height: 800;
 }
 .hero-photo {
     margin: auto;
@@ -89,7 +109,7 @@ ul {
 }
 
 .button{
-    background-color: #AFD9FF; 
+    background-color: var(--button-standart-color); 
     border-radius: 50px;
     align-items: center;
     margin: 10px auto;
@@ -97,11 +117,13 @@ ul {
     padding: 5px 40px;
     width: 220px;
     display: flex;
+    border-width: var(--button-standart-border-width);
+    border-color: var(--button-standart-border-color);
     justify-content:space-evenly;
 
 }
 .button-text{
-    color: black;
+    color: var(--text-color);
     text-transform: uppercase;
     font-weight: 600;
     font-size: 35px;
@@ -110,6 +132,7 @@ ul {
 footer img {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: -13px;
 
 } 
 /* Buttons */
@@ -121,30 +144,37 @@ footer img {
     justify-content:space-between;
     height: 55px;
     padding-bottom: 35px;
+    align-items: center;
 
 }
 
 .step {
     font-size: 25px;
-    padding: 0;
-    color: black;
+    color: var(--text-color);
     font-weight: 600;
-    background-color: #AFD9FF;
-    stroke-width: 3px;
-    flex-shrink: 0;
-    stroke: #D5F1E5;
-    border-radius: 50%;
-    text-align: center;
-    justify-content: center;
-    justify-self: center;
+    background-color: var(--button-standart-color);
+    border-width: 30px;
 }
 
- .buttons ul{
-    min-width: 40px;
-    min-height: 40px;
-    padding: 0;
+.buttons a{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
     text-align: center;
-    justify-items: center; }
+    line-height: 70px;
+    border-width: var(--button-standart-border-width);
+    border-color: var(--button-standart-border-color);
+    border-style: solid;
+}
+
+#step-1 .buttons a:nth-child(1){
+   background-color: var(--button-active-color);
+   border-width: var(--button-standart-border-width);
+   border-color: var(--button-active-border-color);
+   width: 75px;
+   height: 75px;
+}
+
 /* Step Customizable*/
 .photo {
     margin: auto;
