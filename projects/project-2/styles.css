@@ -5,37 +5,32 @@
     font-family: "Sen", sans-serif;
     text-decoration: none;
 }
-
 header{
-    /*
-    z-index: 200;
-    max-height: 10%;
-    position: -webkit-sticky;
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: "overlap";
+    position: -webkit-sticky;
+    z-index: 200;
 }
-
 .logo-background {
-    grid-area: 1/1;
-    width: 450px;
-    height: auto;
+    grid-area: overlap;
+    align-self: center;
+    justify-self: center;
+    margin-top: -18px;
 }
-
-img.logo {
-    max-width: 350px;
-    grid-area: 1/1;
-    top: 0;*/
+.logo {
+    margin-top: -15px;
+grid-area: overlap;
+align-self: center;
+justify-self: center;
 }
-
 #body-wrapper{
     max-width: 1100px;
     margin: -35px auto;
     z-index: 100;
 }
-.photo {
-    position: static;
+.hero-photo {
     margin: auto;
     background-image: url(../project-2/media/hero-photo.jpg);
     position: relative;
@@ -99,8 +94,8 @@ ul {
     align-items: center;
     margin: 10px auto;
     height: 55px;
-    padding: 5px;
-    width: 300px;
+    padding: 5px 40px;
+    width: 220px;
     display: flex;
     justify-content:space-evenly;
 
@@ -112,7 +107,57 @@ ul {
     font-size: 35px;
 }
 
-.footer {
-width: 100%;
-min-height: ;
+footer img {
+    width: 100%;
+    margin: 0 auto;
+
+} 
+/* Buttons */
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-between;
+    height: 55px;
+    padding-bottom: 35px;
+
+}
+
+.step {
+    font-size: 25px;
+    padding: 0;
+    color: black;
+    font-weight: 600;
+    background-color: #AFD9FF;
+    stroke-width: 3px;
+    flex-shrink: 0;
+    stroke: #D5F1E5;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+ .buttons ul{
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0;
+    text-align: center;
+    justify-items: center; }
+/* Step Customizable*/
+.photo {
+    margin: auto;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    place-items: center;
+    width: 1100px;
+    height: 500px;
+    position: relative;
+
+}
+.step1{
+    background-image: url(../project-2/media/hero-photo.jpg);
 }
