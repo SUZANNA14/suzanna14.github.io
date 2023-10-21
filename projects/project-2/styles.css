@@ -13,6 +13,10 @@ html {
 a {
     cursor: url("../project-2/media/cursor-button.svg"), auto;
 }
+a:hover{
+    cursor: url("../project-2/media/cursor-button.svg"), auto;
+}
+
 :root{
     --button-standart-color: #AFD9FF;
     --button-standart-border-color: #D5F1E5;
