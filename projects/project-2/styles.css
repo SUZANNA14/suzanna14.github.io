@@ -8,10 +8,10 @@
 }
 html {
     height: 100%;
-    cursor: url("data:image/x-icon;base64,L1VzZXJzL3RpcmFtaS5zdXppZS9TaXRlcy9zdXphbm5hMTQuZ2l0aHViLmlvL3Byb2plY3RzL3Byb2plY3QtMi9tZWRpYS9jdXJzb3IteWVsbG93LnN2Zw"), pointer;
+    cursor: url("data:image/x-icon;base64,L1VzZXJzL3RpcmFtaS5zdXppZS9TaXRlcy9zdXphbm5hMTQuZ2l0aHViLmlvL3Byb2plY3RzL3Byb2plY3QtMi9tZWRpYS9jdXJzb3IteWVsbG93LnN2Zw"), auto;
 }
 a{
-    cursor: url("/project-2/media/cursor-button.svg"), pointer;
+    cursor: url("/project-2/media/cursor-button.svg"), auto;
 }
 :root{
     --button-standart-color: #AFD9FF;
