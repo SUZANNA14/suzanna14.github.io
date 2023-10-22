@@ -110,7 +110,7 @@ ul {
     height: 210px;
     margin:  auto;
 }
-
+/*Home Button*/
 .button{
     background-color: var(--button-standart-color); 
     border-radius: 50px;
@@ -121,10 +121,18 @@ ul {
     padding: 5px 40px;
     width: 220px;
     display: flex;
+    border-width: 30px;
     border-width: var(--button-standart-border-width);
     border-color: var(--button-standart-border-color);
     justify-content:space-evenly;
 
+}
+.button:hover {
+    background-color: #C3325D;
+   
+}
+.step:hover{
+    background-color: #F9D75F;
 }
 .button-text{
     color: var(--text-color);
@@ -132,7 +140,7 @@ ul {
     font-weight: 600;
     font-size: 35px;
 }
-
+/*Footer*/
 footer img {
     width: 100%;
     margin: 0 auto;
