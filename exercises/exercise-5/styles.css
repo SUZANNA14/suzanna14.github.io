@@ -1,0 +1,117 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    padding: 1em;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+h1{
+    text-align: center;
+    color: rgb(104, 36, 86);
+    font-size: 50px;
+    line-height: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+  #primary-nav {
+
+    background-color: rgb(255, 126, 171);
+  }
+  #primary-nav ul {
+    padding-right: 2em;
+    margin: 0;
+    padding: 0;
+  }
+  #primary-nav li {
+    list-style: none;
+    display: inline-block;
+  }
+  #primary-nav li a {
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+  }
+  #primary-nav li a:hover {
+    background-color: rgb(104, 36, 86);
+  }
+  #toggle-nav {
+    color: white;
+    background-color: rgb(104, 36, 86);
+    border: none;
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    padding: 10px;
+  }
+.item-container{
+    align-items:flex-start;
+    border-radius: 30px;
+    display: flex;
+    padding: 40px;
+    background-color: rgb(246, 239, 245);
+    width: 900px;
+    max-height: 900px;
+    margin-bottom: 40px;
+}
+.item-container img {
+    width: 500px;
+}
+.text{
+    padding-left: 15px;
+}
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px ;
+
+}
+p{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 25px;
+
+}
+
+@media (max-width: 767px) {
+    body.nav-open #primary-nav {
+      grid-template-rows: 1fr;
+    }
+    #primary-nav {
+      display: grid;
+      text-align: center;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.5s ease-out;
+    }
+    .inner {
+      overflow: hidden;
+    }
+    #primary-nav li {
+      display: block;
+    }
+    #toggle-nav {
+      display: block;
+
+    }
+    .item-container{
+        flex-direction: column-reverse;
+        max-width: 450px;
+        align-items: center;
+        justify-content: center;
+    }
+    .item-container img {
+        max-width: 420px;
+    }
+
+  }

@@ -3,172 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Example</title>
-    <style>
-      :root {
-        --header-width: 250px;
-        --base-gray: #d9d9d9;
-        --bg-color: #4e6876;
-        --padding-small: 1em;
-        --padding-medium: 1em;
-        --margin-medium: 1em;
-        --margin-medium: 2em;
-        --gap: 1em;
-      }
-      /* * = Applies to everything. Don't count border as part of width */
-      * {
-        list-style-type: none;
-        text-decoration: none;
-        box-sizing: border-box;
-      
-      }
-       
-      /* Draw border so we can see elements */
-    
-      body {
-        background-color: var(--bg-color);
-        margin: 0;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      /* Header */
-      header {
-        padding: var(--padding-small);
-        background-color: var(--base-gray);
-        #logo {
-          width: var(--header-width);
-          h1 {
-            margin: 0;
-          }
-        }
-        nav {
-          text-align: center;
-          width: calc(100% - var(--header-width));
-
-          ul {
-            float: right;
-    
-            margin: 0;
-          }
-          li {
-            text-align: center;
-            display: inline;
-          }
-          a {
-            padding: var(--padding-medium);
-          }
-          .active {
-            color: black;
-
-          }
-        }
-      }
-      main {
-        max-width: 1200px;
-        margin: 1em auto;
-        min-height: 400px;
-        background-color: #fff;
-        padding: var(--gap);
-
-        row .cardholder {
-          margin: var(--margin-medium);
-        }
-      }
-      /* Intro */
-      #hero-image {
-        width: 45%;
-      }
-      #intro {
-        width: 55%;
-      }
-      /* Figure */
-      figure.card {
-        margin: 0;
-      }
-      /* Utilities */
-      .row {
-        display: flex;
-        -ms-flex-item-align: stretch;
-        margin: 0 auto;
-        max-width: 1100px;
-        gap: var(--gap);
-        justify-content: space;
-        padding: 1em 0;
-      }
-      @media (max-width: 700px) {
-        header {
-          align-items: center;
-          text-align: center;
-        }
-        #hero-image {
-        width: 100%;
-        align-self: center;
-       }
-       #intro {
-        width: 95%;
-        }
-        .row {
-            flex-direction: column;
-        }
-        .card{
-          padding-top: 2em;
-        }
-
-
-      }
-
-    </style>
+    <title> Home | Joy's Bakery</title>
+    <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <div class="row">
-        <div id="logo"><h1>Learning Poker</h1></div>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Texas Hold'em</a></li>
-            <li><a href="#">Popular Poker Variants</a></li>
-          </ul>
-        </nav>
+    <button id="toggle-nav">&#9776;</button>
+    <nav id="primary-nav" role="navigation">
+      <div class="inner">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-    </header>
-
+    </nav>
     <main>
-      <!-- INTRO -->
-      <div class="row">
-        <div id="hero-image">
-          <img src="https://placehold.co/600x400" alt="" />
+      <h1>  Joy's Bakery </h1>
+      <h2>
+        Our Pies </h2>
+      <div class="item-container">
+        <img src="./photos/raspberry-pie.jpg">
+        <div class="text">
+          <h3> Raspberry Pie </h3>
+        <p> This decadent pie smells as good as it looks. We lightly mix Michigan grown red raspberries with sugar and flour and this double crusted pie is to die for!</p>
+       </div>
         </div>
-        <div id="intro">
-          <h2>Welcome to the World of Poker</h2>
-          <p>
-            Poker is a timeless card game that has captivated players for
-            generations. Whether you're a beginner looking to learn the basics
-            or a seasoned player seeking to refine your skills, this microsite
-            is your comprehensive guide to the world of poker. Join us on a
-            journey into the exciting realm of bluffs, bets, and strategic
-            gameplay.
-          </p>
-        </div>
-      </div>
-      <!-- CARDS -->
-      <div class="row cardholder">
-        <figure class="card">
-          <a href="#"><img src="https://placehold.co/600x400" alt="" /></a>
-          <figcaption><a href="#">Caption</a></figcaption>
-        </figure>
-        <figure class="card">
-          <a href="#"><img src="https://placehold.co/600x400" alt="" /></a>
-          <figcaption><a href="#">Caption</a></figcaption>
-        </figure>
-        <figure class="card">
-          <a href="#"><img src="https://placehold.co/600x400" alt="" /></a>
-          <figcaption><a href="#">Caption</a></figcaption>
-        </figure>
-      </div>
+        <div class="item-container">
+          <img src="./photos/orange-pie.jpg">
+          <div class="text">
+            <h3> Orange Pie </h3>
+          <p> A delicious combination of creamy and tangy, this orange pie is sure to become a favorite. The filling is complemented by a layer of candied orange slices on top, with the added punch of cinnamon, and a secret lemon kiss to the crust, for a luscious taste experience.</p>
+         </div>
+          </div>
+
     </main>
+    <script src="exercise5-script.js"></script>
   </body>
 </html>
