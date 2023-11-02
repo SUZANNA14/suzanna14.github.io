@@ -71,3 +71,6 @@ footer{
     line-height: .3em;
     color: #198754;
 }
+.carousel-item{
+    max-height: 550px;
+}
