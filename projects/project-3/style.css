@@ -552,7 +552,6 @@ span:hover {
 @media (max-width: 800px){
   
   .home-box{
-    margin: 1em 0 0 0em;
     overflow-x: hidden;
     
   }
@@ -578,7 +577,10 @@ span:hover {
 
 }
 @media (max-width: 758px){
-
+  .home-box{
+    margin: 1em 0 0 0em;
+  
+  ]
   .link-list{
     flex-direction: column;
     padding: 0;
