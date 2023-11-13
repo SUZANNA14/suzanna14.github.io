@@ -149,6 +149,7 @@
   border-radius: 100%;
   display: grid;
   place-items: center;
+  margin-top: -2em;
   
 
 
@@ -434,6 +435,19 @@ button:hover{
   position: relative;
 
 }
+ 
+/* Footer */
+footer{
+  margin-top: 6em;
+  background-color: var(--footer-color);
+  height: 10em;
+  padding: 4em 3em 3em 3em;
+}
+footer p{
+  color: white;
+  text-align: center;
+  font-weight: 200;
+}
 
 
 
@@ -445,8 +459,7 @@ button:hover{
 
 
 
-
-
+/* Review Open*/
 ::backdrop {
   background-image: linear-gradient(
     45deg,
@@ -467,7 +480,7 @@ span:hover {
 
 
 
-
+/* Media */ 
 
 @media (max-width: 1600px){
   .home-box{
@@ -555,6 +568,10 @@ span:hover {
   .reviews-box-container{
     grid-template-columns: 1fr;
   }
+  .reviews-page-box{
+    
+
+  }
 
 }
 @media (max-width: 758px){
@@ -573,11 +590,19 @@ span:hover {
     margin: 1em 0 0 0;
     overflow-x: hidden;
   }
+  
 .shop-links{
   justify-items: center;
 }
-.shop-book-cover{
-  width: 80%
+div .shop-book-cover{
+  width: 420px;
+  height: auto;
+  margin: 0 auto;
+  padding-left: 2.3em;
+}
+.shop-subtitle{
+  padding: 0 1.3em;
+  text-align: center;
 }
   .bio-box{
     margin: 1em 0 0 0;
@@ -625,6 +650,7 @@ span:hover {
   position: absolute;
   margin-top: 30em;
   align-self: center;
+
   
   }
   .button-view2:hover{
