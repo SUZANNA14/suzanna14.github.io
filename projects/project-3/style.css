@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0px;
     text-decoration: none;
+    list-style: none;
     
   }
   :root{
@@ -358,6 +359,76 @@ button:hover{
 
 }
 
+/* Shop Page*/
+#background{
+  overflow-x: hidden;
+}
+#background-circle {
+  position: absolute;
+  width: 1300px;
+  height: 1300px;
+  z-index: -1;
+  border-radius: 100%;
+  margin: -6em 0 0 45% ;
+  background-color: var(--background-color);
+}
+.shop-box{
+  margin: 2em 4em 0em 4em;
+  overflow-x: hidden;
+
+}
+.shop-links{
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.link-list{
+  display: flex;
+  flex-shrink: 3;
+  padding-left: 0;
+  padding-right: 2em;
+  min-width: 20%;
+}
+.shop-book-cover img{
+  max-height: 85%;
+  max-width: 85%;
+  min-width: 250px;
+  min-width: 250px;
+
+}
+.link-list li {
+  padding: 1em;
+}
+.link-list li a{
+  cursor: pointer;
+}
+
+.link-list li img{
+  background-color: var(--footer-color);
+  padding: 1em;
+  max-width: 20em;
+  min-width: 3em;
+}
+.shop-subtitle{
+  text-align: left;
+  font-size: 2.4em;
+  font-weight: 700;
+  margin-top: -0.3em;
+  padding-bottom: 6vh;
+  padding-left: 1em;;
+}
+.body-wrapper-shop{
+  position: relative;
+
+}
+
+
+
+
+
+
 
 
 
@@ -384,15 +455,18 @@ span:hover {
 
 
 
+
+
+
 @media (max-width: 1600px){
   .home-box{
-  display: flex;
-  flex-direction: column-reverse;
-  margin: 3%;}
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .reviews-box-container{
     grid-template-columns: 1fr 1fr;
   }
-
+  
  
 
 }
@@ -415,10 +489,7 @@ span:hover {
 
 }
 @media(max-width:1300px){
-  .home-box{
-    margin: 3%;
-    
-  }
+ 
   img.author-photo{
     display: none;
     margin: 2em 0 auto 0;
@@ -440,13 +511,28 @@ span:hover {
     max-width: 40em;
     margin: auto auto;
   }
- 
+ .shop-links{
+    flex-direction: column-reverse;
+    margin: auto auto;
+    justify-items: center;
+
+  }
+  .links{
+    padding-top: 2em;
+  }
+  .link-list{
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-items: center;
+  }
+
   
 }
 @media (max-width: 800px){
   
   .home-box{
-    margin: 1em 0 0 -3em;
+    margin: 1em 0 0 0em;
     overflow-x: hidden;
     
   }
@@ -469,10 +555,12 @@ span:hover {
 @media (max-width: 758px){
   .about-box{
     margin: 1em 0 0 0;
+    overflow-x: hidden;
   }
 
   .bio-box{
-    margin: 1em 0 0 0;;
+    margin: 1em 0 0 0;
+    overflow-x: hidden;
    }
   h1{
     font-size: 3.3em;
@@ -529,4 +617,10 @@ span:hover {
 img.author-photo2{
     margin-left: -2em;
   }
+  .bio-text-wrap{
+    padding-right: 2em;
+    
+  }
+  
+  
 }
