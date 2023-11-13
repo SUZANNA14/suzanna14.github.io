@@ -285,8 +285,8 @@ h4{
 p.subtitle{
   text-align: center;
   font-size: 1.3em;
+  padding-top: 0.5em;
   font-weight: 700;
-  margin-top: -0.3em;
   padding-bottom: 6vh;
 }
 .reviews-box-container{
