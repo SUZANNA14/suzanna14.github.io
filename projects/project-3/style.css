@@ -18,7 +18,7 @@
 }
   body {
     
-    font-family: 'Koh Santepheap',sans-serif;
+    font-family: 'Koh Santepheap',serif;
   }
 
   /* NAV BAR*/
@@ -166,7 +166,7 @@
   margin-left: 5em;
 }
 h1{
-  font-family:'Cantata One', sans-serif;
+  font-family:'Cantata One', serif;
   text-transform: uppercase;
   font-size: 5.3em;
   line-height: 1.3em;
@@ -221,7 +221,7 @@ h2{
   padding-bottom: 0.3em;
 }
 h4{
-  font-family: "Cantata One", sans-serif;
+  font-family: "Cantata One", serif;
   font-size: 2.3em;
   text-transform: uppercase;
   padding-bottom: 1em;
@@ -318,7 +318,7 @@ p.subtitle{
   padding-bottom: 0.6em;
 }
 .review-title{
-  font-family: "Koh Santepheap", sans-serif;
+  font-family: "Koh Santepheap", serif;
   text-transform: uppercase;
   font-size: 1.7em;
   font-weight: 700;
@@ -568,10 +568,7 @@ span:hover {
   .reviews-box-container{
     grid-template-columns: 1fr;
   }
-  .reviews-page-box{
-    
 
-  }
 
 }
 @media (max-width: 758px){
