@@ -20,6 +20,8 @@
     
     font-family: 'Koh Santepheap',sans-serif;
   }
+
+  /* NAV BAR*/
   nav {
     min-height: 87px;
     padding: 0 20px;
@@ -44,8 +46,6 @@
   }
   nav .mainMenu li a:hover {
     color: var(--secondary-color);
-   border-bottom: solid;
-    border-width: 2px;
   }
 
   nav .openMenu {
@@ -115,6 +115,17 @@
   }
   
   }
+  /*Nav Links*/
+
+.about nav ul.mainMenu li:nth-child(1),
+.bio nav ul.mainMenu li:nth-child(2),
+.reviews nav ul.mainMenu li:nth-child(3),
+.shop nav ul.mainMenu li:nth-child(4){
+   color: var(--secondary-color);
+   border-bottom: solid;
+   border-width: 2px;
+
+ }
 
 
 
