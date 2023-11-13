@@ -134,7 +134,7 @@
 
 .home-box{
   display: flex;
-  margin: 3%;
+  margin: 4%;
 }
 .cover-box{
   display: grid;
@@ -490,7 +490,9 @@ span:hover {
   .reviews-box-container{
     grid-template-columns: 1fr 1fr;
   }
-  
+  h1{
+    margin-top: -1em;
+  }
  
 
 }
@@ -554,6 +556,10 @@ span:hover {
     overflow-x: hidden;
     
   }
+  h1{
+    margin-top: 0em;
+  }
+ 
   .book-box{
   flex-direction: column;
   justify-items: center;
