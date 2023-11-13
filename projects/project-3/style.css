@@ -437,13 +437,13 @@ button:hover{
 }
  
 /* Footer */
-.footer{
+footer{
   margin-top: 6em;
   background-color: var(--footer-color);
   height: 10em;
   padding: 4em 3em 3em 3em;
 }
-.footer-content p{
+footer p{
   color: white;
   text-align: center;
   font-weight: 200;
