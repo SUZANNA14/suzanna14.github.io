@@ -520,12 +520,6 @@ span:hover {
   .links{
     padding-top: 2em;
   }
-  .link-list{
-    flex-direction: column;
-    padding: 0;
-    align-items: center;
-    justify-items: center;
-  }
 
   
 }
@@ -553,6 +547,13 @@ span:hover {
 
 }
 @media (max-width: 758px){
+  
+  .link-list{
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-items: center;
+  }
   .about-box{
     margin: 1em 0 0 0;
     overflow-x: hidden;
