@@ -566,7 +566,6 @@ span:hover {
   padding-bottom: 5em;
   }
   .title-box{
-    margin: 0;
     padding: 1em;
     justify-self: center;
   }
@@ -579,6 +578,9 @@ span:hover {
 @media (max-width: 758px){
   .home-box{
     margin: 1em 0 0 0em;
+  }
+  .title-box{
+    margin: 0;
   }
   .link-list{
     flex-direction: column;
