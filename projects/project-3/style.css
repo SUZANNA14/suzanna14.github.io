@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    text-decoration: none;
+    
+  }
+  :root{
+    --main-color:#9D64CA;
+    --secondary-color: #F5DC56;
+    --tertiary-color: #F4E8FF;
+    --background-color: #FFFBDB;
+    --footer-color: #592B7C;
+    --pgetitle-color: #8841BE;
+
+}
+  body {
+    
+    font-family: 'Koh Santepheap',sans-serif;
+  }
+  nav {
+    min-height: 87px;
+    padding: 0 20px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    line-height: 2em;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    margin: 0 20px;
+    font-size: 1.5em;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+    color: var(--secondary-color);
+   border-bottom: solid;
+    border-width: 2px;
+  }
+
+  nav .openMenu {
+    color: white;
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    color: white;
+    font-size: 2.3rem;
+    margin: 0 20px;
+    display: none;
+    cursor: pointer;
+  }
+ .logo img{
+    max-width: 420px;
+    padding: 0 20px;
+ }
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  @media (max-width: 1100px) {
+    nav .mainMenu {
+      height: 50vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--main-color);
+      transition: top 0.6s ease 0s;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+        
+      margin: 20px;
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: var(--secondary-color);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+
+.fa fa-times{
+    color: white;
+}
+ .book-box{
+  flex-direction: column;
+  }
+  
+  }
+
+
+
+  
+  /*Home Page*/
+
+.home-box{
+  display: flex;
+  margin: 3%;
+}
+.cover-box{
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  
+}
+.circle{
+  background-color: var(--tertiary-color);
+  min-width: 50em;
+  min-height: 50em;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  
+
+
+}
+.book img{
+  max-width: 400px;
+}
+.button-view2{
+  position: absolute;
+  display: none;
+}
+.title-box{
+  margin-top: 5em;
+  margin-left: 5em;
+}
+h1{
+  font-family:'Cantata One', sans-serif;
+  text-transform: uppercase;
+  font-size: 5.3em;
+  line-height: 1.3em;
+}
+span{
+  height: 30px;
+  color: black;
+}
+hr{
+  margin: 30px 0;
+  height: 5px;
+  background-color: black;
+  border-width: 0;
+  width: 40em;
+}
+.button-view{
+  font-size: 1.8em;
+  color: black;
+  line-height: 8em;
+  font-weight: 700;
+  padding: 10px 25px;
+  background-color: var(--secondary-color);
+  width: 50px;
+}
+.button-view:hover{
+  transition: 0.25s ease-in-out;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+h3{
+  padding-top: 1em;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.about-box{
+  margin: 2em 4em 0em 4em;
+}
+.book-box{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+ 
+}
+.cover img{
+  max-width: 460px;
+}
+h2{
+  color: var(--pgetitle-color);
+  font-weight: 400;
+  font-size: 1.8em;
+  padding-left: 2em;
+  padding-bottom: 0.3em;
+}
+h4{
+  font-family: "Cantata One", sans-serif;
+  font-size: 2.3em;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  line-height: 1.2em;
+}
+.text-wrap {
+  padding: 2em 4em 2em 2em;
+  background-color: var(--background-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+/* Author's Bio */
+.author-photo2{
+  display: none;
+  min-width: 100%;
+  border-radius: 100%;
+}
+.bio-box{
+  margin: 2em 4em 0em 4em;
+}
+.bio-text-wrap {
+  min-width: 70vh;
+  padding: 2em 5em 2em 5em;
+  margin-left: -3em;
+  background-color: var(--background-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+.bio-page{
+  display: flex;
+}
+.facts-wrap{
+  min-width: 70vh;
+}
+
+.author-photo{
+  min-width: 100%;
+  border-radius: 100%;
+  margin: -3em -9em -4em -3em;
+}
+.facts-text{
+  margin-top: 0.4em;
+  padding: 4em;
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 2em;
+}
+.facts-text bold {
+  font-weight: 700;
+}
+
+/* Reviews */
+.reviews-page-box{
+  margin: 2em 4em 0em 4em;
+}
+p.subtitle{
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-top: -0.3em;
+  padding-bottom: 6vh;
+}
+.reviews-box-container{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  gap: 4em;
+}
+.review{
+  display: flex;
+}
+.review-box{
+  background-color: var(--tertiary-color);
+  padding: 1.8em;
+  height: auto;
+  min-width: 22em;
+  min-height: 7em;
+  max-width: 575px;
+  border-radius: 16px;
+  align-items: center;
+  text-align: center;
+  
+  
+}
+.quote-mark{
+  margin-top: -3em;
+}
+.rating{
+  font-size: 1.4em;
+  padding-bottom: 0.6em;
+}
+.review-title{
+  font-family: "Koh Santepheap", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.7em;
+  font-weight: 700;
+  padding-bottom: 2%;
+  text-align: left;
+ 
+}
+.review-text{
+  text-align: left;
+  line-height: 1.6em;
+
+}
+#btn1, #btn2, #btn3 {
+  background-color: var(--secondary-color);
+  padding: 9px;
+  border-radius: 0.4em;
+  text-align: center;
+  
+}
+#btn1:hover, #btn2:hover, #btn3:hover{
+  color: var(--secondary-color);
+  background-color: var(--footer-color);
+  
+}
+
+dialog {
+  background-color: var(--tertiary-color);
+  margin: auto auto;
+  overflow: visible;
+  border: none;
+  padding: 1.8em;
+  min-width: 30em;
+  max-width: 60em;
+  min-height: 20em;
+  border-radius: 16px;
+  align-items: center;
+  text-align: center;
+  
+}
+button{
+  all:unset;
+  background-color: var(--secondary-color);
+  padding: 9px;
+  margin-top: 5px;
+  border-radius: 0.4em;
+}
+button:hover{
+  color: var(--secondary-color);
+  background-color: var(--footer-color);
+
+}
+
+
+
+
+
+
+
+
+::backdrop {
+  background-image: linear-gradient(
+    45deg,
+    #592B7C,
+    #9D64CA,
+    #F5DC56
+  );
+  opacity: 0.60;
+}
+span {
+  cursor: pointer;
+}
+span:hover {
+  color: var(--footer-color);
+  background-color: var(--main-color);
+}
+
+
+
+@media (max-width: 1600px){
+  .home-box{
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 3%;}
+  .reviews-box-container{
+    grid-template-columns: 1fr 1fr;
+  }
+
+ 
+
+}
+@media (max-width: 1500px){
+ .book-box{
+  background-color: var(--background-color);
+  justify-content: first baseline;
+  padding-right: 2em;
+  padding-bottom: 5em;
+ } 
+ .cover-box{
+  max-width: 100%;
+ }
+ img.author-photo{
+  max-width: 98%;
+}
+.bio-text-wrap{
+  min-width: 67%;
+}
+
+}
+@media(max-width:1300px){
+  .body-wrapper{
+    margin: 0 auto;
+  }
+  img.author-photo{
+    display: none;
+    margin: 2em 0 auto 0;
+    min-width: 40em;
+    max-width: 40em;
+  }
+  .bio-page{
+    flex-direction: column;
+  }
+  .facts-wrap{
+    margin: 0 auto;
+  }
+  .facts-text{
+    padding-top: 1em;
+  }
+  .author-photo2{
+    display: block;
+    min-width: 40em;
+    max-width: 40em;
+    margin: auto auto;
+  }
+ 
+  
+}
+@media (max-width: 800px){
+  
+  .home-box{
+    margin: 1em 0 0 -3em;
+    overflow-x: hidden;
+    margin-bottom: 3em;
+  }
+  .book-box{
+  flex-direction: column;
+  justify-items: center;
+  padding: 0;
+  padding-bottom: 5em;
+  }
+  .title-box{
+    margin: 0;
+    padding: 1em;
+    justify-self: center;
+  }
+  .reviews-box-container{
+    grid-template-columns: 1fr;
+  }
+
+}
+@media (max-width: 758px){
+  .about-box{
+    margin: 1em 0 0 0;
+  }
+  .bio-box{
+    margin: 1em 0 0 0;;
+   }
+  h1{
+    font-size: 3.3em;
+    text-align: center;
+    padding-bottom: 0.3em;
+  }
+  .title-box hr{
+    margin: 0 auto;
+    width: 15em;
+    justify-self: center;
+  }
+  h3{
+    text-align: center;
+  }
+  .cover-box{
+    margin-top: -4em;
+    min-width: 100%;
+    margin-left: -3em;
+  }
+ .button-view{
+    margin: 0 auto;
+    position: absolute;
+    display: none;
+    
+  }
+  .circle{
+    min-width: 42em;
+    min-height: 42em;
+    margin-left: auto;
+    place-items: center;
+
+  }
+ .button-view2{
+  font-size: 1.8em;
+  color: black;
+  font-weight: 700;
+  padding: 10px 25px;
+  background-color: var(--secondary-color);
+  min-width: 8em;
+  display: block;
+  position: absolute;
+  margin-top: 30em;
+  align-self: center;
+  
+  }
+  .button-view2:hover{
+    transition: 0.25s ease-in-out;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+  }
+.book img{
+  max-width: 21em;
+}
+img.author-photo2{
+    margin-left: -2em;
+  }
+}

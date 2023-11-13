@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ::backdrop {
+        background-image: linear-gradient(
+          45deg,
+          magenta,
+          rebeccapurple,
+          dodgerblue,
+          green
+        );
+        opacity: 0.75;
+      }
+      span {
+        cursor: pointer;
+      }
+      span:hover {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="btn1">Show 1</span>
+    <button id="btn2">Show 2</button>
+    <button id="btn3">Show 3</button>
+
+    <dialog id="dialog1">
+      <button autofocus>Close</button>
+      <p>1</p>
+    </dialog>
+
+    <dialog id="dialog2">
+      <button autofocus>Close</button>
+      <p>2</p>
+    </dialog>
+
+    <dialog id="dialog3">
+      <button autofocus>Close</button>
+      <p>3</p>
+    </dialog>
+
+    <script>
+      const btn1 = document.querySelector('#btn1');
+      const btn2 = document.querySelector('#btn2');
+      const btn3 = document.querySelector('#btn3');
+
+      const dialog1 = document.querySelector('#dialog1');
+      const dialog2 = document.querySelector('#dialog2');
+      const dialog3 = document.querySelector('#dialog3');
+
+      const close1 = document.querySelector('#dialog1 button');
+      const close2 = document.querySelector('#dialog2 button');
+      const close3 = document.querySelector('#dialog3 button');
+
+      // "Show the dialog" button opens the dialog modally
+      btn1.addEventListener('click', () => {
+        dialog1.showModal();
+      });
+      btn2.addEventListener('click', () => {
+        dialog2.showModal();
+      });
+      btn3.addEventListener('click', () => {
+        dialog3.showModal();
+      });
+
+      // "Close" button closes the dialog
+      close1.addEventListener('click', () => {
+        dialog1.close();
+      });
+      close2.addEventListener('click', () => {
+        dialog2.close();
+      });
+      close3.addEventListener('click', () => {
+        dialog3.close();
+      });
+    </script>
+  </body>
+</html>
