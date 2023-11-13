@@ -547,7 +547,7 @@ span:hover {
 
 }
 @media (max-width: 758px){
-  
+
   .link-list{
     flex-direction: column;
     padding: 0;
@@ -558,7 +558,16 @@ span:hover {
     margin: 1em 0 0 0;
     overflow-x: hidden;
   }
-
+  .shop-box{
+    margin: 1em 0 0 0;
+    overflow-x: hidden;
+  }
+.shop-links{
+  justify-items: center;
+}
+.shop-book-cover{
+  width: 80%
+}
   .bio-box{
     margin: 1em 0 0 0;
     overflow-x: hidden;
