@@ -372,17 +372,14 @@ button:hover{
 }
 
 /* Shop Page*/
-#background{
-  overflow-x: hidden;
-}
-#background-circle {
-  position: absolute;
-  width: 1300px;
-  height: 1300px;
-  z-index: -1;
-  border-radius: 100%;
-  margin: -6em 0 0 45% ;
-  background-color: var(--background-color);
+.shop{
+  background-image: url(../project-3/media/shop-page-background2.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: center;
+  background-size: 100%;
+  background-position: absolute;
+
 }
 .shop-box{
   margin: 2em 4em 0em 4em;
@@ -483,6 +480,10 @@ span:hover {
 /* Media */ 
 
 @media (max-width: 1600px){
+  .shop{
+    background-size: 100%;
+  
+  }
   .home-box{
     display: flex;
     flex-direction: column-reverse;
@@ -497,6 +498,10 @@ span:hover {
 
 }
 @media (max-width: 1500px){
+  .shop{
+    background-size: 1300px;
+  
+  }
  .book-box{
   background-color: var(--background-color);
   justify-content: first baseline;
@@ -576,6 +581,10 @@ span:hover {
 
 }
 @media (max-width: 758px){
+  .shop{
+    background-size: 1300px;
+  
+  }
   .home-box{
     margin: 1em 0 0 0em;
     
