@@ -293,6 +293,7 @@ p.subtitle{
   display: grid;
   grid-template-columns: 3fr 3fr 3fr;
   gap: 4em;
+  padding-bottom: 14em;
 }
 .review{
   display: flex;
@@ -300,9 +301,8 @@ p.subtitle{
 .review-box{
   background-color: var(--tertiary-color);
   padding: 1.8em;
-  height: auto;
-  min-width: 22em;
-  min-height: 7em;
+  min-height: 27em;
+  max-height: fit-content;
   max-width: 575px;
   border-radius: 16px;
   align-items: center;
@@ -311,7 +311,7 @@ p.subtitle{
   
 }
 .quote-mark{
-  margin-top: -3em;
+  margin-top: -1em;
 }
 .rating{
   font-size: 1.4em;
