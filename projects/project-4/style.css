@@ -1,0 +1,243 @@
+  @import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #155D4C;
+    --secondary-color: #E2A700;
+    --secondary-color2: #B24949;
+    --secondary-red-color: #B24949:
+    --tertiary-color: #895221;
+    --background-color-1:#E5F9F5;
+    --background-color-2: #F2EBDA;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    font-family: fairwater-script, sans-serif;
+    font-size: 75px;
+}
+h2{
+    font-family: 'Magra', sans-serif;
+    font-size: 36px;
+}
+h3{
+    font-family: 'Magra', sans-serif;
+    font-size: 40px;
+
+}
+/* Hero Video*/
+#hero{
+    width: 100%;
+    height: 28em;
+}
+video#bgvideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(media/hero-placeholder.jpg) no-repeat;
+    background-size: cover;}
+
+video source{
+    background: no-repeat;
+}
+
+/* Nav Bar Home*/
+.secondary-logo{
+    display: none;
+
+}
+nav{
+    position: sticky;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    background-color: var(--main-color);
+    height: 4em;
+    font-family: 'Magra', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    padding: 0 3em;
+
+}
+nav li{
+    list-style-type: none;
+    padding: 1.5em 0;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav li a{
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.nav-links{
+    max-width: 1500px;
+    padding: 0;
+
+}
+.main-logo-home {
+    justify-self: center;
+    position:relative;
+    min-width: 9em;
+    max-width: 9em;
+    height: 9em;
+    margin-top: -1.5em;
+}
+.logo-bg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 11em;
+    max-width: 11em;
+    height: 100%;
+   
+}
+.logotype{
+    position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+    min-width: 7em;
+    max-width: 7em;
+    height: 100%;
+
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;}
+.sticky + .content {
+  padding-top: 60px;
+}
+.sticky + .logotype{
+    padding-top: 3em;
+}
+ 
+.nav-btn {
+    display: none;}
+
+nav > #nav-check {
+        display: none;
+ }
+
+ @media (max-width:800px) {
+    .main-logo-home{
+        display: none;
+    }
+    .secondary-logo{
+        display: grid;
+        max-height: 3.3em;
+        margin: 0 auto;
+        max-width: auto;
+        transition: all 0.3s ease-in;
+        justify-self: center;
+       padding-top: .8em;
+    
+    }
+    nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    nav > .nav-btn > label {
+        display: inline-block;
+        margin-top: 1.3em;
+        margin-right: 1.3em;
+        margin-left: 1.3em;
+
+    }
+   /* nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(28, 28, 28, 0.151);
+
+    }*/
+    nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #ffffff;
+    }
+    nav > .nav-btn:hover {
+        padding-bottom: .7em;
+        border-radius: 50%;
+        background-color: #1f1f1f47;
+    }
+    nav > .nav-links {
+        display: block;
+        width: 100%;
+        background-color: var(--main-color);
+        height: 0px;
+        text-align: center;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+    nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh);
+        overflow-y: none; 
+        
+    }
+    
+
+
+ }
+
+
+
+
+
+#body-wrapper{
+    min-height: 1200px;
+    background-color: white;
+}
+
+
+footer{
+    background-color: var(--secondary-color2);
+    min-height: 6em;
+    width: 100%;
+}
+
+
+
+
+@media (min-aspect-ratio: 16/9){
+    video#bgvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    video#bgvideo{
+        width: auto;
+        height: 100%;
+    }
+}
