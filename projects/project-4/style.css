@@ -1,5 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
-
+  @import url("https://use.typekit.net/lqx8fgk.css");
 *{
     margin: 0 auto;
     box-sizing: border-box;
@@ -8,8 +8,7 @@
     --main-color: #155D4C;
     --secondary-color: #E2A700;
     --secondary-color2: #B24949;
-    --secondary-red-color: #B24949:
-    --tertiary-color: #895221;
+    --tertiary-color: #874F1D;
     --background-color-1:#E5F9F5;
     --background-color-2: #F2EBDA;
 }
@@ -19,11 +18,20 @@ body{
 
 h1{
     font-family: fairwater-script, sans-serif;
-    font-size: 75px;
+    font-size: 5.5em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--tertiary-color);
+    padding-top: .3em;
+    font-style: 3;
+    font-feature-settings: "ss07" on, "salt" on;
 }
 h2{
     font-family: 'Magra', sans-serif;
-    font-size: 36px;
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+    max-width: 700px;
 }
 h3{
     font-family: 'Magra', sans-serif;
