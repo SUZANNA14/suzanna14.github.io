@@ -35,7 +35,7 @@ h2{
 }
 h3{
     font-family: 'Magra', sans-serif;
-    font-size: 40px;
+    font-size: 2.3em;
     text-align: center;
     padding-top: 2em;
 
@@ -197,7 +197,7 @@ nav > #nav-check {
     }
     nav > .nav-links {
         display: block;
-        width: 100%;
+        min-width: 100%;
         background-color: var(--main-color);
         height: 0px;
         text-align: center;
@@ -238,7 +238,21 @@ footer{
     min-height: 6em;
     width: 100%;
 }
+@media (max-width: 400px) {
+    h1{
+    
+        font-size: 4em;
+    }
+    h2{
+        font-size: 1.4em;
+        margin: 0 1em;
+    }
+    h3{
+        font-size: 1.9em;
+    }
 
+
+}
 
 
 

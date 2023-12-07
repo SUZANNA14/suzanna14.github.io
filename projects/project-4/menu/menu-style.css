@@ -72,6 +72,8 @@
 @media (max-width:1180px){
     .seasonal-flavors{
         flex-direction: column;
+        justify-items: center;
+        width: 100%;
         
     }
     .seasonal-item{
@@ -79,6 +81,18 @@
     }
     .seasonal-wrapper{
         height: 95em;
+    }
+
+}
+@media (max-width:360px){
+    .seasonal-item{
+        min-width: 100%;
+    }
+
+}
+@media (max-width: 400px){
+    .coffee-name{
+        font-size: 1.7em;
     }
 
 }
