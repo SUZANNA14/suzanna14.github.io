@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+@import url("https://use.typekit.net/lqx8fgk.css");
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+    --main-color: #155D4C;
+    --secondary-color: #E2A700;
+    --secondary-color2: #B24949;
+    --tertiary-color: #874F1D;
+    --tertiary-color-2: #6AB7A8;
+    --background-color-1:#E5F9F5;
+    --background-color-2: #F2EBDA;
+}
+.seasonal-wrapper{
+    position: relative;
+    background-color: var(--background-color-1);
+    height: 500px;
+    margin-top: 10em;
+}
+.seasonal-flavors{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    display: flex;
+    margin-top: -2.5em;
+    max-width: 1300px;
+    width: 80%;
+    gap: 1em;
+    justify-content:space-around;
+}
+.seasonal-item{
+    background-color:var(--tertiary-color-2);
+    border-radius: 2em;
+    min-width: 23em;
+    max-width: 23em;
+    min-height: 29em;
+    max-height: 29em;
+    padding: 0 4em 4em 4em;
+    justify-content: space-evenly;
+}
+.item-photo{
+    min-height: 13em;
+    max-width: 13em;
+    min-width: 13em;
+    max-width: 13em;
+    border-radius: 100%;
+    margin-top: -6em;
+    background-color: #B24949;
+}
+.coffee-name{
+    font-family: 'Magra', sans-serif;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1em;
+    font-weight: 600;
+}
+.item-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
+    font-weight: 200;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 2em;
+    font-style: italic;
+}
+@media (max-width:1180px){
+    .seasonal-flavors{
+        flex-direction: column;
+        
+    }
+    .seasonal-item{
+        margin-bottom: 3.3em;
+    }
+    .seasonal-wrapper{
+        height: 95em;
+    }
+
+}
