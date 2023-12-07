@@ -32,6 +32,7 @@ h2{
     font-weight: 200;
     text-align: center;
     max-width: 700px;
+    padding: 0 1.4em;
 }
 h3{
     font-family: 'Magra', sans-serif;
@@ -54,7 +55,7 @@ video#bgvideo {
     max-height: 80em;
     width: 100%;
     height: 28em;
-    z-index: -100;
+    z-index: -1000;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -153,6 +154,9 @@ nav > #nav-check {
  }
 
  @media (max-width:800px) {
+    nav{
+        margin: 0 auto;
+    }
     
     .main-logo-home{
         display: none;
@@ -160,6 +164,7 @@ nav > #nav-check {
     .secondary-logo{
         display: grid;
         max-height: 3.3em;
+        min-height: 3em;
         margin: 0 auto;
         max-width: auto;
         transition: all 0.3s ease-in;
@@ -238,7 +243,7 @@ footer{
     min-height: 6em;
     width: 100%;
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     h1{
     
         font-size: 4em;
@@ -267,6 +272,22 @@ footer{
         width: auto;
         height: 100%;
     }
+}
+@media (max-width: 1700px){
+    video#bgvideo {
+        min-width: fit-content;
+        max-width: fit-content;
+        overflow-x: hidden;
+    }
+    #hero{
+        min-width: 100%;
+        max-width: 100%;
+       overflow-x: hidden;
+    }
+    #home-page{
+        overflow-x: hidden;
+    }
+    
 }
 
 
