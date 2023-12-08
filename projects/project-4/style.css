@@ -3,6 +3,7 @@
 *{
     margin: 0 auto;
     box-sizing: border-box;
+    text-decoration: none;
 }
 :root{
     --main-color: #155D4C;
@@ -13,7 +14,10 @@
     --background-color-2: #F2EBDA;
 }
 body{
+    max-width: 8000px;
+    position: relative;
     background-color: rgb(255, 255, 255);
+    z-index: 20;
 }
 
 h1{
@@ -43,11 +47,12 @@ h3{
 }
 /* Hero Video*/
 #hero{
-    width: 100%;
-    height: 28em;
+    min-height: 500px;
+    max-height: 500px;
+    width: auto;
 }
 video#bgvideo {
-    position: fixed;
+    position: absolute;
     top: 30vh;
     left: 50%;
     min-width: 100%;
@@ -55,12 +60,12 @@ video#bgvideo {
     max-height: 80em;
     width: 100%;
     height: 28em;
-    z-index: -1000;
-    -ms-transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+   -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(media/hero-placeholder.jpg) no-repeat;
+    /*background: url(media/hero-placeholder.jpg) no-repeat;*/
     background-size: cover;}
 
 video source{
@@ -233,7 +238,7 @@ nav > #nav-check {
 
 
 #body-wrapper{
-    min-height: 1200px;
+    min-height: 2300px;
     background-color: white;
 }
 
@@ -242,6 +247,7 @@ footer{
     background-color: var(--secondary-color2);
     min-height: 6em;
     width: 100%;
+    z-index: 30;
 }
 @media (max-width: 420px) {
     h1{
@@ -291,4 +297,81 @@ footer{
 }
 
 
+
 /* Home Content*/
+.home-events-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    'eventtext eventimage'
+    'menuimage menustext';
+    margin: 10em auto;
+    max-width: 2000px;
+}
+.box{
+    min-width: 100%;
+    max-width: 100%;
+    text-align: center;
+    text-align: left;
+}
+.box img{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: auto;
+}
+.box .box-title{
+    
+    font-family: 'Magra', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+
+}
+.box .box-description{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7em;
+    line-height: 133%;
+    letter-spacing: -0.04em;
+    font-weight: 100;
+    padding-top: 1em;
+    padding-right: 6em;
+    color: white;
+}
+.box a{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    justify-self: baseline;
+
+}
+.event-text{
+    grid-area: eventtext;
+    padding: 3em;
+    background-color: var(--secondary-color2);
+}
+.event-photo{
+    grid-area: eventimage;
+    max-width: 300px;
+}
+.menu-text{
+    grid-area: menuimage;
+    
+}
+.menu-photo{
+    grid-area: menustext;
+    padding: 2em;
+    background-color: var(--main-color);
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    
+  }
+
