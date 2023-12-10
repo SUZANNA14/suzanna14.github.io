@@ -126,8 +126,8 @@ nav li a{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    min-width: 12em;
-    max-width: 12em;
+    min-width: 11.2em;
+    max-width: 11.2em;
     height: 100%;
    
 }
@@ -136,7 +136,7 @@ nav li a{
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
-   padding-top: .8em;
+   padding-top: .6em;
     min-width: 7em;
     max-width: 7em;
     height: 100%;
