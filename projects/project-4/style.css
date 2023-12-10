@@ -47,6 +47,25 @@ h3{
     padding-top: 2em;
 
 }
+h4{
+    font-family: 'Magra', sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
+    padding-top: 3em;
+    text-align: center;
+    font-style: italic;
+
+}
+
+a:hover{
+    color: var(--secondary-color2);
+}
+a:visited{
+    color: none;
+}
+
+
+
 /* Hero Video*/
 #hero{
     min-height: 500px;
