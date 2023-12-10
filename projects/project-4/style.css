@@ -14,7 +14,8 @@
     --background-color-2: #F2EBDA;
 }
 body{
-    max-width: 8000px;
+   /* min-width: 100%;
+    max-width: 8000px;*/
     position: relative;
     background-color: rgb(255, 255, 255);
     z-index: 20;
@@ -156,9 +157,9 @@ nav li a{
 
 nav > #nav-check {
         display: none;
- }
+}
 
- @media (max-width:800px) {
+@media (max-width:800px) {
     nav{
         margin: 0 auto;
     }
@@ -231,7 +232,7 @@ nav > #nav-check {
     
 
 
- }
+}
 
 
 
