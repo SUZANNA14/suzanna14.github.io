@@ -22,6 +22,8 @@
     max-width: 1800px;
     background-color: #155D4C;
     display: flex;
+    left: 50%;
+    right: 50%;
 }
 .event-image{
     width: 50%;
