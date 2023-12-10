@@ -27,8 +27,9 @@ h1{
     font-weight: bold;
     text-align: center;
     color: var(--tertiary-color);
-    padding-top: .3em;
+    padding-top: 1.8em;
     font-style: 3;
+    line-height: 90%;
     font-feature-settings: "ss07" on, "salt" on;
 }
 h2{
@@ -37,7 +38,7 @@ h2{
     font-weight: 200;
     text-align: center;
     max-width: 700px;
-    padding: 0 1.4em;
+    padding: 2em 0 .6em .6em;
 }
 h3{
     font-family: 'Magra', sans-serif;
@@ -125,8 +126,8 @@ nav li a{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    min-width: 11em;
-    max-width: 11em;
+    min-width: 12em;
+    max-width: 12em;
     height: 100%;
    
 }
@@ -135,6 +136,7 @@ nav li a{
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
+   padding-top: .8em;
     min-width: 7em;
     max-width: 7em;
     height: 100%;
@@ -250,7 +252,7 @@ footer{
     width: 100%;
     z-index: 30;
 }
-@media (max-width: 420px) {
+@media (max-width: 600px) {
     h1{
     
         font-size: 4em;

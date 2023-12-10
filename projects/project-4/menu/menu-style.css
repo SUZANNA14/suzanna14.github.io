@@ -139,7 +139,20 @@ ul.tea-container li{
     width: 33%;
     font-family: 'Inter', sans-serif;
     font-size: 1.2em;
-    line-height: 116%;
+    line-height: 130%;
     padding: .6em;
     text-align: center;
+}
+@media (max-width:700px) {
+    ul.all-beverages li{
+        width: 100%;
+        margin: 1em 2em;
+    }
+    ul.tea-container li{
+        width: 50%;
+    }
+    .tea-container{
+        margin: 2em 2em;
+    }
+
 }
