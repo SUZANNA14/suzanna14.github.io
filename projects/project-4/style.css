@@ -58,11 +58,10 @@ h5{
 }
 h4{
     font-family: 'Magra', sans-serif;
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: 100;
     padding-top: 3em;
     text-align: center;
-    font-style: italic;
 }
 
 a:hover{
