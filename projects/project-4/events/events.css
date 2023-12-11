@@ -85,6 +85,7 @@ a.event-link{
     background-color: var(--secondary-color);
 }
 .text-bg{
+    background-color: none;
     min-height: 8em;
     margin-top: 2em;
     padding: 4em 0;

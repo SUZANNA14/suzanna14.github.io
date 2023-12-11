@@ -20,7 +20,25 @@ body{
     background-color: rgb(255, 255, 255);
     z-index: 20;
 }
+.background-image{
+    position: absolute;
+    background-image: url(./media/background-watermark.svg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: 2em;
+    z-index: 1;
+    background-size: cover;
+    
+}
+#events-page{
+    background-image: url(./media/background-watermark.svg);
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-size: cover;
+    height: 1800px;
+    width: auto;
 
+}
 h1{
     font-family: fairwater-script, sans-serif;
     font-size: 5.5em;

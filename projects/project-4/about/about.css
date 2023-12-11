@@ -52,3 +52,12 @@
     max-width: 200px;
     height: auto;
 }
+@media (max-width: 800px){
+    .story-text p{
+        font-size: 1.3em;
+    }
+    .p-end-img{
+        max-width: 120px;
+    }
+
+}
