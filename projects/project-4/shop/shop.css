@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+@import url("https://use.typekit.net/lqx8fgk.css");
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root{
+    --main-color: #155D4C;
+    --secondary-color: #E2A700;
+    --secondary-color2: #B24949;
+    --tertiary-color: #874F1D;
+    --tertiary-color-2: #6AB7A8;
+    --background-color-1:#E5F9F5;
+    --background-color-2: #F2EBDA;
+}
+.coffee-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1600px;
+    padding-top: 6em;
+}
+.coffee-item{
+    padding: 2em;
+}
+.coffee-item img{
+    width: 500px;
+    height: auto;
+    border-radius: 1.7em;
+    
+}
+
+@media (max-width: 1150px) {
+    .coffee-item img{
+        width: 350px;
+        height: auto;
+        border-radius: 1.7em;
+        
+    }
+    
+}

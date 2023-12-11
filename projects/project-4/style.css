@@ -63,6 +63,16 @@ h4{
     padding-top: 3em;
     text-align: center;
 }
+h6{
+    font-family: 'Magra', sans-serif;
+    font-size: 1.8em;
+    font-weight: 800;
+    padding-top: 3em;
+    text-align: center;
+    padding-top: 1em;
+    text-transform: uppercase;
+
+}
 
 a:hover{
     color: var(--secondary-color2);
