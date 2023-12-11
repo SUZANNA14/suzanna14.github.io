@@ -365,6 +365,9 @@ footer p{
     footer{
         padding: 2em 1em;
     }
+    h1{
+        line-height: 400%;
+    }
     
 
 

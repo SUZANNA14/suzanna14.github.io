@@ -42,7 +42,7 @@ h4{
 }
 @media (max-width: 420px) {
     h1{
-    
+        line-height: 200%;
         font-size: 4em;
     }
     h2{
