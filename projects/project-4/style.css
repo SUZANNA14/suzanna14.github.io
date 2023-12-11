@@ -292,7 +292,15 @@ nav > #nav-check {
 
 }
 
+#home-page nav ul.nav-links li:nth-child(1) a,
+#menu-page nav ul.nav-links li:nth-child(2) a,
+#hours-page nav ul.nav-links li:nth-child(3) a,
+#events-page nav ul.nav-links li:nth-child(5) a,
+#about-page nav ul.nav-links li:nth-child(6) a, 
+#shop-page nav ul.nav-links li:nth-child(7) a  {
+   color: var(--secondary-color);
 
+ }
 
 
 
