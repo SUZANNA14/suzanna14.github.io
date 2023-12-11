@@ -15,15 +15,18 @@
     --background-color-2: #F2EBDA;
 }
 .hours-wrapper{
-    margin-top: 2em;
+    margin-top: .6em;
     text-align: center;
     font-family: 'Magra', sans-serif;
     font-size: 2em;
     line-height: 140%;
 }
 h4{
-    padding-top: 1.7em ;
+    padding-top: 1em ;
     padding-bottom: .5em;
+    font-family: 'Magra', sans-serif;
+    font-size: 1.1em;
+    font-weight: 800;
 }
 .text-bg{
     min-height: 8em;
@@ -36,6 +39,21 @@ h4{
     margin: 1.4em auto;
     padding: 0em;
     line-height: 20%;
+}
+@media (max-width: 420px) {
+    h1{
+    
+        font-size: 4em;
+    }
+    h2{
+        font-size: 1.4em;
+        margin: 0 1em;
+    }
+    h3{
+        font-size: 1.9em;
+    }
+
+
 }
 
 
