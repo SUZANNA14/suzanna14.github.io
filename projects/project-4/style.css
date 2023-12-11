@@ -267,6 +267,7 @@ nav > #nav-check {
         overflow-y: none; 
         
     }
+
     
 
 
@@ -283,11 +284,38 @@ nav > #nav-check {
 
 
 footer{
+    margin-top: 9em;
     background-color: var(--secondary-color2);
     min-height: 6em;
     width: 100%;
     z-index: 30;
+    padding: 4em;
+    align-content: center;
 }
+.footer-text{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+}
+.footer-text div{
+    display: flex;
+    float: right;
+    margin: 0;
+    width: fit-content;
+    justify-content:space-between;
+}
+footer p{
+    margin: 0;
+    padding-left: 1em;
+    font-family: 'Magra', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+    color: white;
+    text-align: left;
+
+}
+
 @media (max-width: 600px) {
     h1{
     
@@ -299,6 +327,12 @@ footer{
     }
     h3{
         font-size: 1.9em;
+    }
+    footer p{
+        font-size: .9em;
+    }
+    footer{
+        padding: 2em 1em;
     }
 
 

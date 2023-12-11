@@ -40,3 +40,14 @@
     }
     
 }
+@media (max-width: 800px){
+    .coffee-wrapper{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .coffee-item img{
+        margin-top: 2.7em;
+        
+    }
+
+}
