@@ -285,6 +285,10 @@ nav > #nav-check {
         overflow-y: none; 
         
     }
+    h1{
+        line-height: 150%;
+        padding-top: 1em;
+    }
     
 
     
