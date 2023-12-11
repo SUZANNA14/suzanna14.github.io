@@ -471,8 +471,10 @@ footer p{
     justify-self: baseline;
 
 }
+a:hover{
+    color: var(--secondary-color2)
 
-
+}
 
 
 

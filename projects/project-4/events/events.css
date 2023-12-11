@@ -84,6 +84,12 @@ a.event-link{
     padding: .7em;
     background-color: var(--secondary-color);
 }
+a:hover.event-link{
+    color: white;
+    margin-top: .3em;
+    padding: .7em;
+    background-color: var(--secondary-color2);
+}
 .text-bg{
     background-color: none;
     min-height: 8em;
