@@ -20,25 +20,26 @@ body{
     background-color: rgb(255, 255, 255);
     z-index: 20;
 }
-.background-image{
-    position: absolute;
-    background-image: url(./media/background-watermark.svg);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position: 2em;
-    z-index: 1;
-    background-size: cover;
-    
-}
-#events-page{
+#shop-page{
     background-image: url(./media/background-watermark.svg);
     background-repeat: no-repeat;
     background-attachment:local;
     background-size: cover;
-    height: 1800px;
+    background-position: 0 1300px;
+    height: 2000px;
     width: auto;
-
+    
 }
+/*#hours-page{
+    background-image: url(./media/background-watermark.svg);
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-size: cover;
+    background-position: 0 1300px;
+    height: 2000px;
+    width: auto;
+    
+}*/
 h1{
     font-family: fairwater-script, sans-serif;
     font-size: 5.5em;
@@ -121,7 +122,7 @@ video#bgvideo {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    /*background: url(media/hero-placeholder.jpg) no-repeat;*/
+    background: url(media/hero-poster-placeholder.jpg) no-repeat;
     background-size: cover;}
 
 video source{
