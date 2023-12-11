@@ -524,4 +524,17 @@ footer p{
         font-size: 1.2em;
     }
 }
+a.error-button{
+    display:block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 2em auto;
+    padding: .7em;
+    width: 10em;
+    background-color: var(--secondary-color);
+
+}
 
