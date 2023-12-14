@@ -87,7 +87,7 @@ a:hover.event-link{
     color: white;
     margin-top: .3em;
     padding: .7em;
-    background-color: var(--secondary-color2);
+    background-color: var(--tertiary-color-2);
 }
 .text-bg{
     background-color: none;
