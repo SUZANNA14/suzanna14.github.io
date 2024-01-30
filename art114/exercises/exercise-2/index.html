@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      input,
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 5px;
+        border-radius: 10px;
+      }
+      #output {
+        padding: 40px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myform">
+      <label for="first_name">First Name:</label>
+      <input
+        id="first_name"
+        type="text"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Enter your email"/>
+      <input type="submit" value="Submit"a onsubmit="" />
+    </form>
+
+    <div id="output"></div>
+
+    <script>
+      document.write('<h1>Hello Class</h1>');
+
+      var x = document.getElementById("myForm").name;
+        document.getElementByType("submit").innerHTML = x;
+    </script>
+  </body>
+</html>
